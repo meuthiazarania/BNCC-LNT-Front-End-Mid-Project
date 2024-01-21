@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GALLERY</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- style start -->
+  <style>
+    .fade-out {
+      opacity: 0;
+      transition: opacity 0.5s ease-out;
+    }
+  </style>
+  <!-- style end -->
+</head>
+
+<body class="bg-dark">
+  <!-- nav section start -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">GeoWiki.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html" onclick="changePage(event, '/index.html')">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/About/" onclick="changePage(event, '/About/')">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Lore/" onclick="changePage(event, '/Lore/')">Lore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/Character build/index.html" onclick="changePage(event, '/About/')">Character Build</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Gallery/" onclick="changePage(event, '/Gallery/')">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <!-- nav section end -->
+
+  <!-- first layout start-->
+  <div class="container-fluid bg-dark text-light mb-03">
+    <!-- table start -->
+    <table class="table table-dark table-bordered align-items-center mt-4 mb-3">
+      <h2 class="align-items-center mt-0 ">Build Support</h2>
+      <tbody>
+        <tr>
+          <th scope="row"></th>
+          <td>Best Weapon</td>
+          <td><img src="/Assets/black tassel.png" alt="Image Description" style="width: 80px; height: auto;" /></td>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>Replacement Weapon</td>
+          <td>
+            <ol>
+              <li><img src="/Assets/favo lance.png" alt="Image Description" style="width: 80px; height: auto;" /></li>
+              <li><img src="/Assets/staff of homa.png" alt="Image Description" style="width: 80px; height: auto;" />
+              </li>
+              <li><img src="/Assets/rightful reward.png" alt="Image Description" style="width: 80px; height: auto;" />
+              </li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>Best Artifact</td>
+          <td><img src="/Assets/tenacity of millelith.png" alt="Image Description" style="width: 80px; height: auto;" />
+            <h8>x4</h8>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>Main Stat</td>
+          <td>
+            <ol>
+              <li>Sand: HP%</li>
+              <li>Goblet: HP%</li>
+              <li>Circlet: HP%</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>Substat</td>
+          <td>HP%, HP, Energy Recharge</td>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table table-dark table-bordered align-items-center mt-4 mb-0">
+      <h2 class="align-items-center mt-4">Build Sub-DPS</h2>
+      <tbody>
+        <tr>
+          <th scope="row"></th>
+          <td>Best Weapon</td>
+          <td><img src="/Assets/staff of homa.png" alt="Image Description" style="width: 80px; height: auto;" /></td>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>Replacement Weapon</td>
+          <td>
+            <ol>
+              <li><img src="/Assets/engulfing lightning.png" alt="Image Description"
+                  style="width: 80px; height: auto;" /></li>
+              <li><img src="/Assets/the catch.png" alt="Image Description" style="width: 80px; height: auto;" /></li>
+              <li><img src="/Assets/favo lance.png" alt="Image Description" style="width: 80px; height: auto;" /></li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>Best Artifact</td>
+          <td><img src="/Assets/archaic petra.png" alt="Image Description" style="width: 80px; height: auto;" />x2<img
+              src="/Assets/noblesse oblige.png" alt="Image Description" style="width: 100px; height: auto;" />x2</td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>Main Stat</td>
+          <td>
+            <ol>
+              <li>Sand: ATK%</li>
+              <li>Goblet: Geo DMG</li>
+              <li>Circlet: CRIT DMG/CRIT Rate</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>Substat</td>
+          <td>ATK%, HP%, CRIT Rate, CRIT DMG, Energy Recharge</td>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--table end-->
+  </div>
+  <!-- first layout end -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script>
+    function changePage(event, url) {
+      event.preventDefault();
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = url;
+      }, 500); // Adjust the timeout value based on the transition duration
+    }
+  </script>
+</body>
+
+</html>

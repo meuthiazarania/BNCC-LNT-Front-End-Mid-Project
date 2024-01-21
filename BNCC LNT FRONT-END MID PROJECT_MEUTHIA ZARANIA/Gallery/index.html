@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SOCIAL MEDIA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- style start -->
+  <style>
+    .fade-out {
+      opacity: 0;
+      transition: opacity 0.5s ease-out;
+    }
+  </style>
+  <!-- style end -->
+</head>
+
+<body class="bg-dark">
+  <!-- nav section start -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">GeoWiki.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html" onclick="changePage(event, '/index.html')">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/About/" onclick="changePage(event, '/About/')">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Lore/" onclick="changePage(event, '/Lore/')">Lore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Character Build/" onclick="changePage(event, '/Character Build/')">Character
+              Build</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/Gallery/index.html" onclick="changePage(event, '/About/')">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <!-- nav section end -->
+
+  <!-- first layout start -->
+  <div class="container-fluid bg-dark text-light mb-0" style="height: 100%;">
+
+    <div class="row">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <h2>In Game Assets</h2>
+          <img src="/Assets/Zhongli_Icon.png" class="img-fluid" style="border: 1px solid" alt="..." width="200"
+            height="200">
+          <p>Character Icon</p>
+        </div>
+      </div>
+      <div class="col">
+        <img src="/Assets/Zhongli_Item.png" class="img-fluid" style="border: 1px solid" alt="..." width="200"
+          height="200">
+        <p>Item Icon</p>
+      </div>
+      <div class="col">
+        <img src="/Assets/Zhongli_Side_Icon.png" class="img-fluid" style="border: 1px solid" alt="..." width="200"
+          height="200">
+        <p>Party Icon</p>
+      </div>
+      <div class="col">
+        <img src="/Assets/Zhongli in game.png" class="img-fluid" style="border: 1px solid" alt="..." width="200"
+          height="200">
+        <p>In Game Model</p>
+      </div>
+      <div class="col">
+        <img src="/Assets/Zhongli_Wish.png" class="img-fluid" style="border: 1px solid" alt="..." width="400"
+          height="400">
+        <p>Full Wish</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row row-cols-1 row-cols-md-1 g-2">
+        <div class="col">
+          <h2>Namecard</h2>
+          <img src="/Assets/Namecard_Background_Zhongli_Planet_Befall.png" class="img-fluid" style="border: 1px solid"
+            alt="..." width="400" height="400">
+          <p><span class="text-warning">Zhongli: Planet Befall</span> Background</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row row-cols-1 row-cols-md-1 g-2">
+        <div class="col">
+          <h2>Constellation</h2>
+          <img src="/Assets/Zhongli Cons.png" class="img-fluid" style="border: 1px solid" alt="..." width="200"
+            height="200">
+          <p><span class="text-warning">Lapis Dei</span> Constellation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- first layout end -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script>
+    function changePage(event, url) {
+      event.preventDefault();
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = url;
+      }, 500); // Adjust the timeout value based on the transition duration
+    }
+  </script>
+</body>
+
+</html>
